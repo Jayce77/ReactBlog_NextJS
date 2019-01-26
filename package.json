@@ -1,0 +1,27 @@
+{
+  "name": "ReactBlog_NextJS",
+  "version": "1.0.0",
+  "description": "A Blog site created using React and NextJS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayce77/ReactBlog_NextJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jayce77/ReactBlog_NextJS/issues"
+  },
+  "homepage": "https://github.com/Jayce77/ReactBlog_NextJS#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  }
+}
