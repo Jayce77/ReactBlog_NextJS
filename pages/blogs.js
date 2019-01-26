@@ -1,10 +1,14 @@
 import React from 'react'
+import Header from '../components/shared/header'
 
 class Blog extends React.Component {
 
   render() {
     return(
-      <div>this is the blog page</div>
+      <div>
+        <Header />
+        <p>this is the blogs page</p>
+      </div>
     )
   }
 }
