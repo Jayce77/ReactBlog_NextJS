@@ -1,9 +1,11 @@
 import Header from '../components/shared/header'
+import BaseLayout from '../components/layouts/base-layout'
 
 const Index = () => (
   <div>
-    <Header />
-    <p>Hello Next.js</p>
+    <BaseLayout>
+      <p>Hello Next.js</p>
+    </BaseLayout>
   </div>
 )
 
