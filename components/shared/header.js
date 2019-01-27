@@ -12,15 +12,22 @@ class Header extends React.Component {
         <Link href="/about">
           <a> About </a>
         </Link>
+        <Link href="/portfolios">
+          <a> Portfolios </a>
+        </Link>
         <Link href="/blogs">
           <a> Blog </a>
         </Link>
         <Link href="/cv">
           <a> CV </a>
         </Link>
-        <Link href="/portfolios">
-          <a> Portfolios </a>
-        </Link>
+        <style jsx>
+          {`
+            a {
+              font-size: 20px
+            }
+          `}
+        </style>
       </div>
     )
   }
