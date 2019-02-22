@@ -11,7 +11,7 @@ import {
 
 const BsNavLink = ({ route, title }) => (
   <Link href={route}>
-    <a className="nav-link"> {title} </a>
+    <a className="nav-link port-navbar-link"> {title} </a>
   </Link>
 )
 
@@ -34,24 +34,24 @@ class Header extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Jayce Crowther</NavbarBrand>
+        <Navbar className="port-navbar port-default absolute" color="transparent" dark expand="md">
+        <NavbarBrand className="port-navbar-brand" href="/">Jayce Crowther</NavbarBrand>
         <NavbarToggler onClick={this.toggle} />
         <Collapse isOpen={this.state.isOpen} navbar>
           <Nav className="ml-auto" navbar>
-            <NavItem>
+            <NavItem className="port-navbar-item">
               <BsNavLink route={"/"} title={'Home'} />
             </NavItem>
-            <NavItem>
+            <NavItem className="port-navbar-item">
               <BsNavLink route={"/about"} title={'About'} />
             </NavItem>
-            <NavItem>
+            <NavItem className="port-navbar-item">
               <BsNavLink route={"/portfolios"} title={'Portfolios'} />
             </NavItem>
-            <NavItem>
+            <NavItem className="port-navbar-item">
                 <BsNavLink route={"/blogs"} title={'Blog'} />
             </NavItem>
-            <NavItem>
+            <NavItem className="port-navbar-item">
               <BsNavLink route={"/cv"} title={'CV'} />
             </NavItem>
           </Nav>
