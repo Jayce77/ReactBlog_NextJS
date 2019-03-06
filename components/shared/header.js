@@ -8,6 +8,7 @@ import {
   NavbarToggler,
   Collapse
 } from 'reactstrap'
+import auth0 from '../../services/auth0'
 
 const BsNavLink = ({ route, title }) => (
   <Link href={route}>
@@ -17,7 +18,7 @@ const BsNavLink = ({ route, title }) => (
 
 const Login = () => {
   return (
-    <span className="nav-link port-navbar-link clickable">Login</span>
+    <span onClick={ auth0.login } className="nav-link port-navbar-link clickable">Login</span>
   )
 }
 
