@@ -15,6 +15,18 @@ const BsNavLink = ({ route, title }) => (
   </Link>
 )
 
+const Login = () => {
+  return (
+    <span className="nav-link port-navbar-link clickable">Login</span>
+  )
+}
+
+const Logout = () => {
+  return (
+    <span className="nav-link port-navbar-link clickable">Logout</span>
+  )
+}
+
 class Header extends React.Component {
 
   constructor(props) {
@@ -53,6 +65,12 @@ class Header extends React.Component {
             </NavItem>
             <NavItem className="port-navbar-item">
               <BsNavLink route={"/cv"} title={'CV'} />
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <Login />
+            </NavItem>
+            <NavItem className="port-navbar-item">
+              <Logout />
             </NavItem>
           </Nav>
         </Collapse>
