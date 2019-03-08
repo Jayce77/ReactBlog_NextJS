@@ -5,7 +5,7 @@ const BaseLayout = (props) => {
 
   return (
     <div className="layout-container">
-      <Header />
+      <Header isAuthenticated={props.isAuthenticated} />
       <main className={`cover ${className}`}>
         <div className="wrapper">
           { children }
