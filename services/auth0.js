@@ -68,7 +68,7 @@ class Auth0 {
   }
 
   clientAuth() {
-    return isAuthenticated()
+    return this.isAuthenticated()
   }
 
   serverAuth(req) {
